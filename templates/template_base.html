@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Mi Aplicación Flask{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>{% block header %}¡Bienvenido a Mi Aplicación Flask!{% endblock %}</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/productos">Productos</a></li>
+                <li><a href="/agregar/producto">Agregar Producto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>{% block footer %}© 2024 Mi Aplicación Flask{% endblock %}</p>
+    </footer>
+</body>
+</html>
